@@ -1,4 +1,4 @@
-<h1>How to create a new dynamic class in Django</h1>
+<h1>How to create a new dynamic class Navbar in Django</h1>
 
 <h3>example</h3>
 <img src="./1.png" alt="">
