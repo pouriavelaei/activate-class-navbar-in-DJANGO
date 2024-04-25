@@ -1,0 +1,9 @@
+{% with request.resolver_match.url_name as url_name %}
+  <ul class="nav">
+      <li><a href="{% url "BaseSite:home" %}" class="{% if url_name == 'home' %}active{% endif %}" >Home</a></li>
+      <li><a href='{% url "BaseSite:explore" %}' class="{% if url_name == 'explore' %}active{% endif %}" >Explore</a></li>
+      <li><a href='{% url "BaseSite:details" %}' class="{% if url_name == 'details' %}active{% endif %}" >Item Details</a></li>
+      <li><a href='{% url "BaseSite:author" %}' class="{% if url_name == 'author' %}active{% endif %}" >Author</a></li>
+      <li><a href='{% url "BaseSite:create" %}' class="{% if url_name == 'create' %}active{% endif %}" >Create Yours</a></li>
+  </ul>   
+{% endwith %}
