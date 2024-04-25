@@ -6,11 +6,15 @@
 <h3>To:</h3>
 <img src="./2.png" alt="">
 <p>
+
     <br>
     {% with request.resolver_match.url_name as url_name %}
     {% endwith %}
+    <br>
 </p>
 <p>
+
     <br>
     class="{% if url_name == 'name_url' %}name class active{% endif %}"
+    <br>
 </p>
